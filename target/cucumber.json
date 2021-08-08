@@ -1,0 +1,116 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-06T14:28:34.231Z",
+        "line": 4,
+        "name": "valid admin login",
+        "description": "",
+        "id": "login;valid-admin-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat utils.ConfigReader.getPropertyValue(ConfigReader.java:29)\n\tat steps.LoginSteps.user_enters_valid_admin_username_and_password(LoginSteps.java:21)\n\tat ✽.user enters valid admin username and password(file:///Users/alinaisaievska/IdeaProjects/CucumberProjectMaven/src/test/resources/features/Login.feature:5)\n",
+              "duration": 35000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user enters valid admin username and password",
+            "match": {
+              "location": "steps.LoginSteps.user_enters_valid_admin_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin user is successfully logged in",
+            "match": {
+              "location": "steps.LoginSteps.admin_user_is_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-06T14:28:34.614Z",
+        "line": 16,
+        "name": "login with valid username and invalid password",
+        "description": "",
+        "id": "login;login-with-valid-username-and-invalid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user enters valid  username and invalid password",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user see invalid credentials text on login page",
+            "match": {
+              "location": "steps.LoginSteps.user_see_invalid_credentials_text_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
